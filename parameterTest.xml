@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Parameters Suit" verbose="2">
+
+    <parameter name="value1" value="50"/>
+    <parameter name="value2" value="20"/>
+
+    <test name="Parameters Test 1">
+        <parameter name="value1" value="10"/>
+        <parameter name="value2" value="20"/>
+
+        <classes>
+            <class name="testNG.parameter.ParameterTest_1"/>
+        </classes>
+    </test>
+    <test name="Parameters Test 2">
+        <parameter name="value1" value="50"/>
+        <parameter name="value2" value="30"/>
+        <classes>
+            <class name="testNG.parameter.ParameterTest_2"/>
+        </classes>
+    </test>
+    <test name="Parameter Test 3">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testNG.parameter.ParameterTest_3"/>
+        </classes>
+    </test>
+</suite>
